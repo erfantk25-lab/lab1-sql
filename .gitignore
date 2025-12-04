@@ -1,8 +1,8 @@
-*.db
 *.duckdb
-.venv/
+*.wal
+
+*.csv
+
 __pycache__/
-.DS_Store
-node_modules/
-.evidence/
 .ipynb_checkpoints/
+*.db
