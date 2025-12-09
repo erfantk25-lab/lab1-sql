@@ -1,0 +1,4 @@
+name: sakila
+type: csv
+options:
+  path: .
