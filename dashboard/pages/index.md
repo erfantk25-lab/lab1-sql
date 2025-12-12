@@ -5,6 +5,7 @@ title: Sakila BI Report
 # DVD Rental Analysis
 
 ## 1. Top 5 Customers
+Who are our top 5 customers by total spend?
 
 ```sql top_customers
 SELECT 
@@ -17,13 +18,13 @@ ORDER BY total_spend DESC
 LIMIT 5
 ```
 
-# AI Generated 
-<BarChart
-data={top_customers}
-x=customer_name
-y=total_spend
-title="Top 5 Customers by Spend"
-color=skyblue
+<BarChart 
+    data={top_customers}
+    x=customer_name
+    y=total_spend
+    title="Top 5 Customers by Spend"
+    color=skyblue
+    swapXY=true
 />
 
 
@@ -49,7 +50,6 @@ ORDER BY total_revenue DESC
 ```
 
 
-# AI Generated 
 <BarChart
 data={category_revenue}
 x=category_name
@@ -84,5 +84,5 @@ data={top_actors}
 x=actor_name
 y=number_of_movies
 title="Top 10 Actors by Number of Movies"
-color=coral
+color=blue
 />
